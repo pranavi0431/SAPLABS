@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Fiesta 🍽️</title>
+    <link rel="stylesheet" href="res.css">
+</head>
+<body>
+
+<div id="loginBox" class="card center">
+    <h2>🔐 Welcome to Food Fiesta</h2>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<div id="app" class="hidden">
+
+<header>
+    <h1>🍤 Food Fiesta – Andhra Specials</h1>
+    <button class="logout" onclick="logout()">Logout</button>
+</header>
+
+
+<section id="adminPanel" class="card hidden">
+    <h2>👨‍🍳 Admin Menu Control</h2>
+
+    <div class="form-row">
+        <input id="itemName" placeholder="Food Name">
+        <input id="itemPrice" type="number" placeholder="Price ₹">
+        <input id="itemImage" placeholder="Image URL">
+        <button onclick="addItem()">Add</button>
+    </div>
+
+    <ul id="adminMenu"></ul>
+</section>
+
+
+<section id="customerPanel" class="card hidden">
+    <h2>🍽️ Menu</h2>
+    <div id="menu" class="menu"></div>
+    <p id="funnyMsg"></p>
+</section>
+
+<section id="cartSection" class="card hidden">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart"></ul>
+    <h3>Total ₹<span id="total">0</span></h3>
+</section>
+
+</div>
+
+<script src="res.js"></script>
+</body>
+</html>
+
+
